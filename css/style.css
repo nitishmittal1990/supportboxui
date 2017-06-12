@@ -1,0 +1,277 @@
+.widgetopen {
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+    -webkit-transition: bottom 0.3s ease 0.8s; 
+          -ms-transition: bottom 0.3s ease 0.8s;
+              transition: bottom 0.3s ease 0.8s;
+}
+
+.widgetopen a {
+    color: #333;
+    background: #eee;
+    text-decoration: none;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+}
+.widgetopen.godown {
+    bottom: -60px;
+}
+.widgetopen a span {
+    margin-left: 4px;
+    display: inline-block;
+}
+.widget {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: bottom 1s ease; 
+          -ms-transition: bottom 1s ease;
+              transition: bottom 1s ease;
+}
+.widget.godown {
+    bottom: -500px;
+} 
+.widget > a {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background: #333;
+    height: 39px;
+    color: #fff;
+    width: 41px;
+    text-align: right;
+    line-height: 38px;
+    padding: 0 7px;
+    -webkit-transition: 0.3s all ease; 
+          -ms-transition: 0.3s all ease;
+              transition: 0.3s all ease;
+}
+ul.nav.nav-tabs {
+    position: relative;
+    float: right;
+    left: -34px;
+}
+.widget > a:hover {
+    background: #F44236;
+    color: #fff;
+}
+.tab-content {
+    background-color: #EEEEEE;
+    min-width: 650px;
+}
+.tab-pane#faq {
+    min-width: 100vw;
+}
+.nav-tabs > li {
+    width: 200px;
+    cursor: pointer;
+    height: 45px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin: 0 -15px 0 0;
+}
+.nav-tabs > li.active {
+    z-index: 40;
+    position: relative;
+    padding-bottom: 1px;
+}
+.nav-tabs > li:after {
+    position: absolute;
+    top: 14px;
+    left: 50px;
+}
+.nav-tabs > li:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    z-index: 1;
+    position: absolute;
+    top: 17px;
+    left: 25px;
+}
+#chattab:after {
+    content: "Live Chat";
+}
+#chattab:before {
+    content: "\f075";
+}
+#faqtab:after {
+    content: "FAQ";
+}
+#faqtab:before {
+    content: "\f002";
+}
+#mailtab:after {
+    content: "Mail Us"
+}
+#mailtab:before {
+    content: "\f003";
+}
+.nav-tabs > li a {
+    height: 50px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 0 10px 0;
+    box-shadow: 0 0 2px #fff inset;
+    -webkit-transform: perspective(100px) rotateX(30deg);
+    -moz-transform: perspective(100px) rotateX(30deg);
+}
+.nav-tabs > li.active a {
+    background-color: #eee;
+    background-size: 100%;
+    box-shadow: 0 0 2px 0 #fff inset;
+}
+
+.nav-tabs > li a span {
+    position: relative;
+}
+p{
+    margin: 0;
+}
+
+.tab-pane {
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.44);
+    padding: 24px;
+}
+.fileattach {
+    position: relative;
+}
+.fileattach p {
+    position: absolute;
+    top: 0;
+    color: #337ab7;
+}
+.fileattach input[type="file"] {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+.mailform {
+    position: relative;
+}
+.btnmail {
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+    background: linear-gradient(-180deg, rgba(77,123,159,0.98) 0%, #315F86 100%);
+}
+.mailto {
+    position: relative;
+}
+.mailto input {
+    padding-left: 32px;
+}
+.mailto span {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-weight: 500;
+}
+
+.faqdiv {
+    text-align: center;
+    margin: -24px 0;
+}
+
+.faqleft {
+    display: inline-block;
+    text-align: left;
+    padding: 24px;
+    /* border-right: 1px solid rgba(0,0,0,0.2); */
+    width: 25%;
+    vertical-align: middle;
+}
+.faqleft p {
+    margin-bottom: 18px;
+}
+.faqleft > a {
+    background: linear-gradient(-180deg, rgba(254,254,254,0.97) 0%, #E1E1E1 100%);
+    border: 1px solid #ccc;
+    margin: 0 auto 18px;
+    text-align: center;
+    display: block;
+    width: 120px;
+}
+.faqright {
+    width: 70%;
+    display: inline-block;
+    padding: 24px 24px 12px;
+    vertical-align: middle;
+    border-lefT: 1px solid rgba(0,0,0,0.2);
+}
+.searchform {
+    position: relative;
+}
+.searchform i {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    color: #bbb;
+}
+.searchform input {
+    border-radius: 20px;
+    padding-left: 35px;
+}
+.faqlist {
+    margin-bottom: 0;
+    margin-top: 22px;
+}
+.faqlist > li {
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.faqlist > li > a {
+    display: block;
+    color: #3A82BD;
+    padding: 16px 0;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+.faqlist > li > a:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #BFBFBF;
+    text-decoration: none;
+}
+.faqlist a > i {
+    display: block;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 10px;
+}
+.faqlist .circleit > i {
+    border:1px solid #3A82BD;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.faqlist > li > a:active,.faqlist > li > a:focus {
+    text-decoration: none;
+}   
+
+
+.livechatbox {
+    min-height: 200px;
+    position: relative;
+}
+.chatsend {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.chatsend a {
+    position: absolute;
+    color: #aaa;
+    top: 6px;
+    right: 12px;
+}
+
+.alert {
+    display: none;
+}

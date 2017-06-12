@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Recruiter Box</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="widgetopen godown">
+			<a href="javascript:void(0);" id="openWidget">
+				<img src="logo.svg" alt="Recruiterbox" width="20">
+				<span>Recruiterbox Support</span>
+			</a>
+		</div>
+		<div class="widget">
+			<a href="javascript:void(0);" id="closeWidget"><i class="fa fa-close"></i></a>
+			<ul class="nav nav-tabs">
+			  <li class="active navlist" id="chattab" data-id="liveChat"><a data-toggle="tab" href="#liveChat">
+		  		</a></li>
+			  <li class="navlist" id="faqtab" data-id="faq"><a data-toggle="tab" href="#faq"></a></li>
+			  <li class="navlist" id="mailtab" data-id="mailus"><a data-toggle="tab" href="#mailus"></a></li>
+			</ul>
+			<div class="clearfix"></div>
+			<div class="tab-content">
+			  <div id="liveChat" class="tab-pane fade in active">
+			    <div class="livechatbox">
+			    	<p class="text-center">Have a question? We'd love to help.</p>
+			    	<div class="chatsend">
+			    		<input class="form-control" type="text" placeholder="Type a message..">
+			    		<a href="javascript:void(0);"><i class="fa fa-paper-plane"></i></a>
+			    	</div>
+			    </div>
+			  </div>
+			  <div id="faq" class="tab-pane fade">
+			    <div class="faqdiv">
+			    	 <div class="faqleft">
+			    	 	<p>Prefer email instead? </p>
+			    	 	<a href="mailto:support@recruiterbox.com" target="_top" class="btn btn-default"><i class="fa fa-envelope-o"></i>  Write to us</a>
+			    	 	<p>We are super quick in responding to your queries.</p>
+			    	 </div>
+			    	 <div class="faqright">
+			    	 	<div class="form-group searchform">
+			    	 		<i class="fa fa-search"></i>
+			    	 		<input type="search" name="" placeholder="What can we help you with? Start typing your question.." class="form-control">
+			    	 	</div>
+			    	 	<ul class="list-unstyled faqlist">
+			    	 		<li>
+			    	 			<a href="javascript:void(0);" class="circleit">
+			    	 				<i class="fa fa-folder"></i>
+			    	 				<span>Sharing Openings</span>
+			    	 			</a>
+			    	 		</li>
+			    	 		<li>
+			    	 			<a href="javascript:void(0);" class="circleit">
+			    	 				<i class="fa fa-thumb-tack"></i>
+			    	 				<span>Managing Openings</span>
+			    	 			</a>
+			    	 		</li>
+			    	 		<li>
+			    	 			<a href="javascript:void(0);">
+			    	 				<i class="fa fa-id-badge"></i>
+			    	 				<span>Managing Candidates</span>
+			    	 			</a>
+			    	 		</li>
+			    	 		<li>
+			    	 			<a href="javascript:void(0);">
+			    	 				<i class="fa fa-universal-access"></i>
+			    	 				<span>Account Management</span>
+			    	 			</a>
+			    	 		</li>
+			    	 		<li>
+			    	 			<a href="javascript:void(0);" class="circleit">
+			    	 				<i class="fa fa-folder"></i>
+			    	 				<span>Sourcing Candidated</span>
+			    	 			</a>
+			    	 		</li>
+			    	 		<li>
+			    	 			<a href="javascript:void(0);" class="circleit">
+			    	 				<i class="fa fa-folder"></i>
+			    	 				<span>Reporting</span>
+			    	 			</a>
+			    	 		</li>
+			    	 	</ul>
+			    	 </div>
+			    </div>
+			  </div>
+			  <div id="mailus" class="tab-pane fade">
+			  	<div class="mailform">
+				    <form action="" role="form" id="mailForm">
+				    	<p class="alert alert-success">
+				    		<i class="fa fa-check"></i>  Message Sent! Thanks for reaching out! Someone from our team will get back to you soon.
+				    	</p>
+				    	<div class="form-group mailto">
+				    		<span>To</span>
+				    		<input type="text" class="form-control" id="" placeholder="support@recruiterbox.com" readonly>
+				    	</div>
+				    	<div class="form-group">
+				    		<input type="text" name="subject" placeholder="Subject" class="form-control">
+				    	</div>
+				    	<div class="form-group">
+				    		<textarea class="form-control" placeholder="Message..."></textarea>
+				    	</div>
+				    	<div class="form-group fileattach">
+				    		<input type="file" name="">
+				    		<p><i class="fa fa-paperclip"></i>  Attach Files</p>
+				    	</div>
+				    	<button type="submit" class="btn btn-primary btnmail">Send Mail</button>
+				    </form>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script src="script.js"></script>
+	</body>
+</html>
